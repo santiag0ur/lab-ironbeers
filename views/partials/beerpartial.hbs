@@ -1,0 +1,14 @@
+<!-- views/partials/playerCard.hbs -->
+
+<div class='cardOfBeer'>
+  <a href='/beer/{{this.id}}' alt='{{this.name}}'>
+    <img src={{this.image_url}} alt='' />
+    <div>
+      <h5><strong>{{this.name}}</strong></h5>
+      <div id='textDescription'>
+        <p>{{this.tagline}}</p>
+      </div>
+      <p>{{this.description}}</p>
+    </div>
+  </a>
+</div>

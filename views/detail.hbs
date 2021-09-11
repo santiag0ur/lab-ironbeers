@@ -1,0 +1,62 @@
+{{#each beer}}
+<div id='detail'>
+{{> beerpartial this}}
+
+      <div id='textcard'>
+        <p>Brewers tips: {{this.brewers_tips}}</p>
+        <p>First brewed: {{this.first_brewed}}</p>
+        <ul>Volume: {{#each volume}}
+            <li>{{this}}</li>
+            {{/each}}
+            </ul>
+            <ul>Boil volume: {{#each boil_volume}}
+            <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        <p>Ibu: {{this.ibu}}</p>
+        <p>Abv: {{this.abv}}</p>
+        <p>Target fg: {{this.target_fg}}</p>
+        <p>Target og: {{this.target_og}}</p>
+        <p>Ebc: {{this.ebc}}</p>
+        <p>Srm: {{this.srm}}</p>
+        <p>Ph: {{this.ph}}</p>
+        <p>Attenuation level: {{this.attenuation_level}}</p>
+      </div>
+</div>
+{{/each}}
+
+<!--
+
+++++++
+    
+first_brewed: '02/2010',
+    
+    abv: 10.2,
+    ibu: 20,
+    target_fg: 1018,
+    target_og: 1095,
+    ebc: 16,
+    srm: 8,
+    ph: 4.1,
+    attenuation_level: 8.1,
+    volume: { value: 20, unit: 'litres' },
+    boil_volume: { value: 25, unit: 'litres' },
+    method: {
+      mash_temp: [Array],
+      fermentation: [Object],
+      twist: 'Two split vanilla pods in cold conditioning'
+    },
+    ingredients: {
+      malt: [Array],
+      hops: [Array],
+      yeast: 'Westvleteren 12 (recovered from a bottle)'
+    },
+    food_pairing: [
+      'Baked brown butter lobster',
+      'Apple crumble and custard',
+      'Coffee carrot cake'
+    ],
+    brewers_tips: 'To capture yeast from another bottle conditioned beer, simply make up a starter with some wort and grow the yeast up. Once it goes through a fermentation at 1 litre it can go straight into your wort to start the main fermentation.',
+    contributed_by: 'Sam Mason '
+        
+-->

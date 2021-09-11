@@ -5,3 +5,91 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+.homebeer {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+
+.homebeer img {
+  max-width: 45%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #2081c3;
+
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-left: 2em;
+  box-shadow: 0 4px 4px 0px #bfbfbf;
+}
+
+@media (max-width: 400px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+nav a {
+  color: #f7f9f9;
+  text-decoration: none;
+  padding: 1em;
+}
+
+a img {
+  max-height: 15em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#textDescription {
+  color: #bfbfbf;
+}
+
+#containerBeer {
+  padding: 50px;
+}
+
+#containerRandom {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+#containerRandom div p h5 {
+  display: inline;
+}
+
+#containerRandom img {
+  display: inline;
+}
+
+#detail {
+  padding: 10%;
+}
+
+button {
+  background-color: #2081c3;
+  box-shadow: 0px 5px 5px #bfbfbf;
+  border-radius: 4px;
+  padding: 5px 15px;
+  border-color: #bfbfbf;
+}
+
+button a {
+  color: #f7f9f9;
+}
